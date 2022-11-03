@@ -45,13 +45,14 @@ a {
   width: 35px;
 }
 
-#detail1 {
-  display: none;
-}
-
 #headline {
   background: #1C1A19;
   padding-left: 10px;
+  position: absolute;
+  background-image: url('./images/illustration.png');
+  background-repeat: no-repeat;
+  background-position: bottom -2em right 0;
+  padding-bottom: 18vh;
 }
 
 .headlines {
@@ -86,7 +87,7 @@ a {
   display: flex;
   list-style-type: none;
   padding: 5px;
-  padding-bottom: 15vh;
+  /* padding-bottom: 15vh; */
 }
 
 .social-media ul li {
