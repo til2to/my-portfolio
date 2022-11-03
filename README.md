@@ -1,6 +1,6 @@
 # Project Name
 
-## portfolio projects
+## Portfolio
 
 > This is a website about showing projects that I have done.
 
@@ -12,31 +12,20 @@
 ### Setup
 
 ### Install
-> linters for javascript, css and html
+> linters css and html
 
 ### Deployment
-
-> Github
 
 ## Built With
 
 - css
 - html
-- Javascript
 
 ## Authors
 
 👤 **Author1**
 
 ### Owusu Dennis Prah
-
-👤 **Author2**
-
-### Kwasi Antwi
-
-## Live Demo
-
-- GitHub: [@til2to](https://til2to.github.io/porfolio_projects/)
 
 ## 🤝 Contributing
 
