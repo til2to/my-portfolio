@@ -48,7 +48,7 @@ a {
 #headline {
   background: #1c1a19;
   padding-left: 10px;
-  position: absolute;
+  position: relative;
   background-image: url('./images/illustration.png');
   background-repeat: no-repeat;
   background-position: bottom -2em right 0;
@@ -86,8 +86,6 @@ a {
   display: flex;
   list-style-type: none;
   padding: 5px;
-
-  /* padding-bottom: 15vh; */
 }
 
 .social-media ul li {
