@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  background: #3C3A39;
+  background: #3c3a39;
 }
 
 header h2 {
@@ -46,7 +46,7 @@ a {
 }
 
 #headline {
-  background: #1C1A19;
+  background: #1c1a19;
   padding-left: 10px;
   position: absolute;
   background-image: url('./images/illustration.png');
@@ -63,7 +63,7 @@ a {
   margin: 0;
   padding: 10px;
   font-weight: 400;
-  color: #FF6B00;
+  color: #ff6b00;
   font-size: 40px;
 }
 
@@ -72,7 +72,7 @@ a {
   margin: 0;
   padding: 10px;
   font-weight: 700;
-  color: #fff5E1;
+  color: #fff5e1;
 }
 
 .brand p {
@@ -87,6 +87,7 @@ a {
   display: flex;
   list-style-type: none;
   padding: 5px;
+
   /* padding-bottom: 15vh; */
 }
 
