@@ -1,0 +1,93 @@
+body {
+  box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background: #3c3a39;
+}
+
+header h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 2%;
+}
+
+.menuImg {
+  display: flex;
+  margin-left: 60%;
+  align-items: center;
+}
+
+.menu_items {
+  display: none;
+}
+
+.menu {
+  width: 35px;
+}
+
+#headline {
+  background: #1c1a19;
+  padding-left: 10px;
+  position: relative;
+  background-image: url('./images/illustration.png');
+  background-repeat: no-repeat;
+  background-position: bottom -2em right 0;
+  padding-bottom: 18vh;
+}
+
+.headlines {
+  padding-top: 20vh;
+}
+
+.headlines h1 {
+  margin: 0;
+  padding: 10px;
+  font-weight: 400;
+  color: #ff6b00;
+  font-size: 40px;
+}
+
+.headlines span {
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+  color: #fff5e1;
+}
+
+.brand p {
+  margin: 0;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.social-media ul {
+  display: flex;
+  list-style-type: none;
+  padding: 5px;
+}
+
+.social-media ul li {
+  padding: 5px;
+}
