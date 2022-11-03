@@ -67,10 +67,9 @@ a {
   font-size: 40px;
 }
 
-.headlines h2 {
+.headlines span {
   font-size: 24px;
   margin: 0;
-  padding: 10px;
   font-weight: 700;
   color: #fff5e1;
 }

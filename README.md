@@ -5,6 +5,10 @@
 > This is a website about showing projects that I have done.
 
 ## Getting Started
+- Clone the project to your local repo
+- open in code editor
+- run the command "npm init -y"
+- Start previewing in your browser
 
 ### Prerequisites
 > Vs Code
@@ -13,8 +17,6 @@
 
 ### Install
 > linters css and html
-
-### Deployment
 
 ## Built With
 
