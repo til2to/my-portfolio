@@ -88,6 +88,13 @@ a {
   padding: 5px;
 }
 
+.categories-list li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  color: #fff;
+}
+
 .social-media ul li {
   padding: 5px;
 }
@@ -99,7 +106,7 @@ a {
 }
 
 #recentWorks h2 {
-  color: #1C1A19;
+  color: #1c1a19;
   width: 300px;
   font-weight: 400;
   font-size: 36px;
@@ -116,12 +123,12 @@ a {
 }
 
 .title {
-  color: #091E42;
+  color: #091e42;
   font-size: 29px;
 }
 
 .introInfo {
-  color: #091E42;
+  color: #091e42;
   font-size: 15px;
 }
 
@@ -135,7 +142,7 @@ a {
 
 .bigButton {
   display: flex;
-  background: #FF6B00;
+  background: #ff6b00;
   color: #fff;
   align-items: center;
   padding: 10px;
@@ -145,13 +152,13 @@ a {
 }
 
 .button {
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
   background: #fff;
   padding: 10px 12px;
-  color: #091E42;
+  color: #091e42;
   margin: 3px;
 }
-/* ------------------------------------------------ */
+
 #cardWork {
   position: relative;
   margin-bottom: 2vh;
@@ -196,13 +203,12 @@ a {
 .actionBtn {
   width: 100%;
   position: absolute;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   padding: 11px 0;
   text-align: center;
   margin-top: 3vh;
 }
 
-/* ------------------------------- */
 .about-section {
   background-color: rgba(0, 0, 0, 0.9);
   font-family: 'Inter', sans-serif;
@@ -283,13 +289,6 @@ a {
   align-items: center;
   padding: 0 1.2rem;
   margin: 0;
-}
-
-.categories-list li {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 3rem;
-  color: #fff;
 }
 
 .resume-btn {
