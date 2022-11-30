@@ -47,8 +47,6 @@ a {
 #headline {
   background: #1c1a19;
   padding-left: 10px;
-
-  /* height: 75vh; */
   position: relative;
   background-image: url('./images/illustration.png');
   background-repeat: no-repeat;
