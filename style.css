@@ -190,6 +190,20 @@ a {
   cursor: pointer;
 }
 
+#contact-me button {
+  width: 40%;
+  background-color: #ff6b00;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
 #works button:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
@@ -354,12 +368,12 @@ a {
 }
 
 #contact-me h2 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 #contact-form ul {
@@ -377,7 +391,7 @@ textarea {
   height: 40px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -386,21 +400,7 @@ textarea {
 }
 
 textarea {
-  color: #3C3A39;
+  color: #3c3a39;
   min-height: 120px;
-  background: #FBF8F7;
-}
-
-#contact-me button {
-  width: 40%;
-  background-color: #ff6b00;
-  padding: 15px;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-top: 15px;
-  font-weight: 700;
-  font-size: 17px;
+  background: #fbf8f7;
 }
