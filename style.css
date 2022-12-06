@@ -376,6 +376,8 @@ a {
 }
 
 #contact-form ul {
+  display: flex;
+  flex-direction: column;
   border: none;
   padding: 0 24px;
 }
@@ -402,6 +404,18 @@ textarea {
   color: #3c3a39;
   min-height: 120px;
   background: #fbf8f7;
+  padding-top: 10px;
+}
+
+#contact-me button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#contact-me button:active {
+  color: #F4F1F0;
+  background: #E05304;
 }
 
 ul.footer-list {
