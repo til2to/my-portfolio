@@ -571,8 +571,12 @@ ul.footer-list {
   }
 
   .imgHeader img {
-    min-width:100%;
-    height: 590px;
+    height: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+  }
+
+  .imgHeader img:hover {
+    box-shadow: 11px 10px 34px 0px rgb(69 69 69 / 74%);
   }
 
   footer hr {
