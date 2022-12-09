@@ -19,15 +19,17 @@ header {
   background: #3c3a39;
 }
 
-header h2 {
+header a h2 {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  flex-wrap: nowrap;
 }
 
 a {
   text-decoration: none;
   margin-left: 2%;
+  margin-top: 8px;
 }
 
 .menuImg {
@@ -107,13 +109,20 @@ a {
 }
 
 #recentWorks h2 {
-  color: #1c1a19;
+  color: #091E42;;
   font-weight: 400;
   font-size: 36px;
   border-bottom: 1px solid #212121;
   align-items: center;
-  margin-top: 2em;
+  margin: 2em .7em 1em .7em;
   padding: 1em;
+  font-family: 'Crete Round', sans-serif;
+  width: 315px;
+  height: 52px;
+}
+
+hr {
+  display: none;
 }
 
 .imgHeader {
@@ -122,7 +131,7 @@ a {
   align-items: center;
   margin-bottom: 2vh;
 }
-
+ 
 .imgHeader img {
   width: 340px;
 }
@@ -426,4 +435,285 @@ ul.footer-list {
 
 .footer-li {
   margin: 0 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_items {
+    display: flex;
+    font-family: 'Inter';
+  }
+
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+  nav ul li span {
+    display: none;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav ul li a {
+    margin: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 45px;
+    height: 20px;
+    color: #fff;
+  }
+
+  .menuImg {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7% 0 7%;
+  }
+
+  #headline {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    background-image: url('./images/Illustration-header.svg');
+    background-position: top -2em right 0;
+    background-size: 30em;
+    height: 50vh;
+  }
+
+  .headlines {
+    width: 566px;
+  }
+
+  .headlines h1 {
+    font-size: 72px;
+  }
+
+  .brand p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 566px;
+    line-height: 32px;
+  }
+
+  #headline:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .headline-container {
+    margin-left: 3em;
+  }
+
+  .headlines span {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    position: relative;
+    top: 40px;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recent-header-container {
+    display: flex;
+    margin: 0 3% 0 0%;
+    margin-top: 0;
+  }
+
+  .recent-work-image-and-info {
+    display: flex;
+    justify-content: center;
+    margin-left: 8.5%;
+  }
+
+  #recentWorks {
+    display: grid;
+    height: auto;
+    grid-template-columns: 100%;
+    margin: 0 5%;
+  }
+
+  #recentWorks h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    min-width: 315px;
+    height: 52px;
+    border: none;
+  }
+
+  .imgHeader img {
+    width: 120% !important;
+  }
+
+  #recentWorks hr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #212121;
+    min-width: 700px;
+    height: 0 !important;
+    align-self: center;
+    position: relative;
+    right: 40px;
+    top: 20px;
+    width: calc(100% - 370px);
+  }
+
+  #seeProjects {
+    margin: 2% 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* gap: 2px; */
+  }
+
+  #cardWork {
+    margin: 0;
+    width: 440px;
+    height: 435px;
+  }
+
+  .bg {
+    width: 440px !important;
+    height: 435px !important;
+    background-size: cover;
+  }
+
+  .bg:hover {
+    background-image: url('./images/cardPlaceholder.png');
+  }
+
+  .introInfo h3 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    width: 448px;
+    height: 48px;
+  }
+
+  #works {
+    margin-left: 100px;
+  }
+
+  .introInfo p {
+    width: 448px;
+    height: 140px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #cardWork button {
+    padding-top: 20px !important;
+  }
+
+  .about-container {
+    width: 566px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 8.5%;
+    border-bottom: none;
+  }
+
+  .about-img {
+    background-image: url('./images/illustration-about-me.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 352px;
+    width: 672px;
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+
+  .about-line {
+    display: flex;
+    width: 80%;
+    border: 1px solid #fff;
+    margin: 0 10% 0 10%;
+  }
+
+  .about-header {
+    margin-bottom: 15px;
+  }
+
+  .about-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-categories {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categories {
+    margin-right: 10%;
+  }
+
+  #contact-me {
+    display: flex;
+    margin: 10% 8%;
+  }
+
+  .contact-info {
+    width: 500px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px; 
+  }
+
+  .contact-info h2 {
+    text-align: start !important;
+    padding-bottom: 0;
+    margin-top: 30px !important; 
+  }
+
+  form {
+    width: 684px;
+    height: 330px;
+  }
+
+  form ul li:last-child {
+    display: flex;
+  }
+
+  textarea {
+    min-height: 60px !important;
+  }
+  
+  #contact-me button {
+    width: 30%;
+    margin-bottom: 0 !important;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
+
+  footer hr {
+    display: flex;
+    background: #dfe1e6;
+    height: 1px;
+    margin-bottom: 2%;
+  }
+
+  .lastImg {
+    width: 100%;
+  }
 }
