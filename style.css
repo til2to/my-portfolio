@@ -53,11 +53,11 @@ a {
   background-image: url('./images/illustration.png');
   background-repeat: no-repeat;
   background-position: bottom -2em right 0;
-  padding-bottom: 18vh;
+  padding-bottom: 18%;
 }
 
 .headlines {
-  padding-top: 20vh;
+  padding-top: 10%;
 }
 
 .headlines h1 {
@@ -125,20 +125,24 @@ hr {
   display: none;
 }
 
+.recent-work-image-and-info {
+  margin: 5px 25px;
+}
+
 .imgHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: 2%;
 }
 
 .imgHeader img {
-  width: 340px;
+  max-width: 100%;
+  height: 270px;
 }
 
 #seeProjects {
   position: relative;
-  height: 100%;
 }
 
 #works h3 {
@@ -154,9 +158,9 @@ hr {
   font-size: 15px;
 }
 
-#works {
-  margin: 0 11vw;
-}
+/* #works {
+  margin: 0 10%;
+} */
 
 #works ul {
   display: flex;
@@ -186,17 +190,16 @@ hr {
 }
 
 #cardWork button {
-  width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #ff6b00;
-  padding: 15px 0;
+  padding: 16px 0;
   text-align: center;
-  margin-top: 2.5vh;
   font-family: 'Inter', sans-serif;
   color: #fff;
   border: none;
   bottom: 0;
   cursor: pointer;
+  width: 100%;
 }
 
 #contact-me button {
@@ -221,22 +224,21 @@ hr {
 }
 
 .prjectDescription {
-  padding-top: 11vh;
+  padding-top: 11%;
   margin-left: 7px;
 }
 
 .bg {
   background-image: url('./images/maskGroup.png');
-  position: relative;
-  width: 327px;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 356px;
 }
 
 #cardWork {
   position: relative;
-  margin-bottom: 2vh;
-  left: 2em;
-  top: 2em;
+  margin-bottom: 2%;
+  margin: 5% 5%;
 }
 
 #cardWork h3 {
@@ -250,6 +252,8 @@ hr {
 }
 
 #cardWork ul {
+  position: relative;
+  top: 10%;
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
@@ -274,7 +278,7 @@ hr {
 .about-section {
   background-color: rgba(0, 0, 0, 0.9);
   font-family: 'Inter', sans-serif;
-  margin-top: 25vh;
+  margin-top: 15%;
   position: relative;
 }
 
@@ -291,7 +295,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 8vh;
+  padding-top: 8%;
 }
 
 .about-header {
@@ -481,14 +485,14 @@ ul.footer-list {
     justify-content: start;
     position: relative;
     background-image: url('./images/Illustration-header.svg');
-    background-position: top -2em right 0;
-    background-size: 30em;
-    height: 57vh;
+    background-position: top 0em right 0;
+    background-size: contain;
+    height: 20%;
   }
 
   .headlines {
     width: 566px;
-    padding-top: 16vh !important;
+    padding-top: 10% !important;
   }
 
   .headlines h1 {
@@ -509,7 +513,7 @@ ul.footer-list {
   }
 
   .headline-container {
-    margin-left: 3em;
+    margin: 7em 0 0 3em;
   }
 
   .headlines span {
@@ -533,14 +537,13 @@ ul.footer-list {
 
   .recent-header-container {
     display: flex;
-    margin: 0 3% 0 0%;
     margin-top: 0;
   }
 
   .recent-work-image-and-info {
     display: flex;
-    justify-content: center;
-    margin-left: 8.5%;
+    margin-bottom: 10%;
+    margin: 0 !important;
   }
 
   #recentWorks {
@@ -563,10 +566,13 @@ ul.footer-list {
     min-width: 315px;
     height: 52px;
     border: none;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .imgHeader img {
-    width: 120% !important;
+    min-width:100%;
+    height: 590px;
   }
 
   footer hr {
@@ -580,8 +586,7 @@ ul.footer-list {
     display: flex;
     flex-direction: column;
     border: 1px solid #212121;
-    min-width: 700px;
-    height: 0 !important;
+    height: 0;
     align-self: center;
     position: relative;
     right: 40px;
@@ -590,22 +595,16 @@ ul.footer-list {
   }
 
   #seeProjects {
-    margin: 2% 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-    /* gap: 2px; */
+    gap: 15px;
   }
 
   #cardWork {
     margin: 0;
-    width: 440px;
-    height: 435px;
   }
 
   .bg {
-    width: 440px !important;
-    height: 435px !important;
     background-size: cover;
   }
 
@@ -622,7 +621,7 @@ ul.footer-list {
   }
 
   #works {
-    margin-left: 100px;
+    margin-left: 20px;
   }
 
   .introInfo p {
@@ -634,6 +633,7 @@ ul.footer-list {
 
   #cardWork button {
     padding-top: 20px !important;
+    width: 100%;
   }
 
   .about-container {
@@ -641,24 +641,22 @@ ul.footer-list {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    margin-left: 8.5%;
+    margin-left: 5%;
     border-bottom: none;
   }
 
   .about-img {
     background-image: url('./images/illustration-about-me.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     height: 352px;
-    width: 672px;
+    width: 100%;
     position: absolute;
-    top: 5%;
-    right: 0;
+    top: 10%;
+    left: 30%;
   }
 
   .about-line {
     display: flex;
-    width: 80%;
     border: 1px solid #fff;
     margin: 0 10% 0 10%;
   }
@@ -684,7 +682,7 @@ ul.footer-list {
 
   #contact-me {
     display: flex;
-    margin: 10% 8%;
+    margin: 10% 5%;
   }
 
   .contact-info {
@@ -695,7 +693,7 @@ ul.footer-list {
   }
 
   form {
-    width: 684px;
+    width: 65%;
     height: 330px;
   }
 
@@ -714,9 +712,5 @@ ul.footer-list {
 
   footer {
     margin-top: 10%;
-  }
-
-  .lastImg {
-    width: 100%;
   }
 }
