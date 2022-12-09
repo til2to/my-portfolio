@@ -126,19 +126,11 @@ hr {
 }
 
 .recent-work-image-and-info {
-  margin: 5px 25px;
+  margin: 0 25px;
 }
 
-.imgHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2%;
-}
-
-.imgHeader img {
-  max-width: 100%;
-  height: 270px;
+.recent-work-image-and-info img {
+  height: 32%;
 }
 
 #seeProjects {
@@ -157,10 +149,6 @@ hr {
   color: #091e42;
   font-size: 15px;
 }
-
-/* #works {
-  margin: 0 10%;
-} */
 
 #works ul {
   display: flex;
@@ -191,6 +179,7 @@ hr {
 
 #cardWork button {
   position: relative;
+  top: 25%;
   background-color: #ff6b00;
   padding: 16px 0;
   text-align: center;
@@ -228,17 +217,11 @@ hr {
   margin-left: 7px;
 }
 
-.bg {
-  background-image: url('./images/maskGroup.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 356px;
-}
-
 #cardWork {
-  position: relative;
-  margin-bottom: 2%;
-  margin: 5% 5%;
+  margin: 17% 5%;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/maskPlaceholder-one.png');
+  background-size: cover;
+  height: 400px;
 }
 
 #cardWork h3 {
@@ -485,7 +468,7 @@ ul.footer-list {
     justify-content: start;
     position: relative;
     background-image: url('./images/Illustration-header.svg');
-    background-position: top 0em right 0;
+    background-position: top 0 right 0;
     background-size: contain;
     height: 20%;
   }
@@ -543,7 +526,7 @@ ul.footer-list {
   .recent-work-image-and-info {
     display: flex;
     margin-bottom: 10%;
-    margin: 0 !important;
+    padding-left: 1.2em;
   }
 
   #recentWorks {
@@ -566,13 +549,10 @@ ul.footer-list {
     min-width: 315px;
     height: 52px;
     border: none;
-    margin-left: 0;
-    padding-left: 0;
   }
 
-  .imgHeader img {
-    min-width:100%;
-    height: 590px;
+  .recent-work-image-and-info img {
+    height: 100%;
   }
 
   footer hr {
@@ -595,21 +575,20 @@ ul.footer-list {
   }
 
   #seeProjects {
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
+    gap: 5px;
   }
 
-  #cardWork {
-    margin: 0;
+  #cardWork:hover > *:not(#cardWork button) {
+    opacity: 0;
   }
 
-  .bg {
+  #cardWork:hover {
+    background: url('./images/maskPlaceholder-one.png');
+    background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  .bg:hover {
-    background-image: url('./images/cardPlaceholder.png');
   }
 
   .introInfo h3 {
@@ -632,7 +611,6 @@ ul.footer-list {
   }
 
   #cardWork button {
-    padding-top: 20px !important;
     width: 100%;
   }
 
