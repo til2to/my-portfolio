@@ -482,11 +482,12 @@ ul.footer-list {
     background-image: url('./images/Illustration-header.svg');
     background-position: top -2em right 0;
     background-size: 30em;
-    height: 50vh;
+    height: 57vh;
   }
 
   .headlines {
     width: 566px;
+    padding-top: 16vh !important;
   }
 
   .headlines h1 {
@@ -521,7 +522,7 @@ ul.footer-list {
     justify-content: center;
     margin-left: 1%;
     position: relative;
-    top: 40px;
+    top: 80px;
   }
 
   .social-media ul {
