@@ -19,15 +19,17 @@ header {
   background: #3c3a39;
 }
 
-header h2 {
+header a h2 {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
+  flex-wrap: nowrap;
 }
 
 a {
   text-decoration: none;
   margin-left: 2%;
+  margin-top: 8px;
 }
 
 .menuImg {
@@ -51,11 +53,11 @@ a {
   background-image: url('./images/illustration.png');
   background-repeat: no-repeat;
   background-position: bottom -2em right 0;
-  padding-bottom: 18vh;
+  padding-bottom: 18%;
 }
 
 .headlines {
-  padding-top: 20vh;
+  padding-top: 10%;
 }
 
 .headlines h1 {
@@ -76,11 +78,16 @@ a {
 
 .brand p {
   margin: 0;
+  margin-right: 15px;
   padding: 0 10px;
   font-size: 16px;
   font-weight: 400;
   color: #fff;
   font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .social-media ul {
@@ -107,29 +114,32 @@ a {
 }
 
 #recentWorks h2 {
-  color: #1c1a19;
+  color: #091e42;
   font-weight: 400;
   font-size: 36px;
   border-bottom: 1px solid #212121;
   align-items: center;
-  margin-top: 2em;
+  margin: 2em 0.7em 1em 0.7em;
   padding: 1em;
+  font-family: 'Crete Round', sans-serif;
+  width: 315px;
+  height: 52px;
 }
 
-.imgHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2vh;
+hr {
+  display: none;
 }
 
-.imgHeader img {
-  width: 340px;
+.recent-work-image-and-info {
+  margin: 0 25px;
+}
+
+.recent-work-image-and-info img {
+  height: 32%;
 }
 
 #seeProjects {
   position: relative;
-  height: 100%;
 }
 
 #works h3 {
@@ -143,10 +153,6 @@ a {
 .introInfo {
   color: #091e42;
   font-size: 15px;
-}
-
-#works {
-  margin: 0 11vw;
 }
 
 #works ul {
@@ -177,17 +183,32 @@ a {
 }
 
 #cardWork button {
-  width: 100%;
-  position: absolute;
+  position: relative;
+  top: 25%;
   background-color: #ff6b00;
-  padding: 15px 0;
+  padding: 16px 0;
   text-align: center;
-  margin-top: 2.5vh;
   font-family: 'Inter', sans-serif;
   color: #fff;
   border: none;
   bottom: 0;
   cursor: pointer;
+  width: 100%;
+}
+
+#contact-me button {
+  width: 40%;
+  background-color: #ff6b00;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 124px;
+  font-weight: 700;
+  font-size: 17px;
+  height: 48px;
 }
 
 #contact-me button {
@@ -212,10 +233,11 @@ a {
 }
 
 .prjectDescription {
-  padding-top: 11vh;
+  padding-top: 11%;
   margin-left: 7px;
 }
 
+<<<<<<< HEAD
 .bg {
   background-image: url('./images/maskGroup.png');
   position: relative;
@@ -223,11 +245,13 @@ a {
   height: 356px;
 }
 
+=======
+>>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 #cardWork {
-  position: relative;
-  margin-bottom: 2vh;
-  left: 2em;
-  top: 2em;
+  margin: 5% 1.5%;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/maskPlaceholder-one.png');
+  background-size: cover;
+  height: 400px;
 }
 
 #cardWork h3 {
@@ -241,6 +265,8 @@ a {
 }
 
 #cardWork ul {
+  position: relative;
+  top: 10%;
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
@@ -265,7 +291,7 @@ a {
 .about-section {
   background-color: rgba(0, 0, 0, 0.9);
   font-family: 'Inter', sans-serif;
-  margin-top: 25vh;
+  margin-top: 15%;
   position: relative;
 }
 
@@ -282,7 +308,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: 8vh;
+  padding-top: 8%;
 }
 
 .about-header {
@@ -376,6 +402,8 @@ a {
 }
 
 #contact-form ul {
+  display: flex;
+  flex-direction: column;
   border: none;
   padding: 0 24px;
 }
@@ -402,8 +430,23 @@ textarea {
   color: #3c3a39;
   min-height: 120px;
   background: #fbf8f7;
+  padding-top: 10px;
 }
 
+<<<<<<< HEAD
+=======
+#contact-me button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+#contact-me button:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+>>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 ul.footer-list {
   display: flex;
   justify-content: center;
@@ -412,4 +455,277 @@ ul.footer-list {
 
 .footer-li {
   margin: 0 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu_items {
+    display: flex;
+    font-family: 'Inter', sans-serif;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav ul li:nth-child(1) {
+    display: none;
+  }
+
+  nav ul li span {
+    display: none;
+  }
+
+  nav ul li a {
+    margin: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 45px;
+    height: 20px;
+    color: #fff;
+  }
+
+  .menuImg {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7% 0 7%;
+  }
+
+  #headline {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    background-image: url('./images/Illustration-header.svg');
+    background-position: top 0 right 0;
+    background-size: contain;
+    height: 20%;
+  }
+
+  .headlines {
+    width: 566px;
+    padding-top: 10% !important;
+  }
+
+  .headlines h1 {
+    font-size: 72px;
+  }
+
+  .brand p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 566px;
+    line-height: 32px;
+  }
+
+  #headline:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .headline-container {
+    margin: 7em 0 0 3em;
+  }
+
+  .headlines span {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    position: relative;
+    top: 80px;
+  }
+
+  .social-media ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recent-header-container {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .recent-work-image-and-info {
+    display: flex;
+    margin-bottom: 10%;
+    padding-left: 1.2em;
+  }
+
+  #recentWorks {
+    display: grid;
+    height: auto;
+    grid-template-columns: 100%;
+    margin: 0 5%;
+  }
+
+  .contact-info h2 {
+    text-align: start !important;
+    padding-bottom: 0;
+    margin-top: 30px !important;
+  }
+
+  #recentWorks h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    min-width: 315px;
+    height: 52px;
+    border: none;
+  }
+
+  .recent-work-image-and-info img {
+    height: 100%;
+  }
+
+  footer hr {
+    display: flex;
+    background: #dfe1e6;
+    height: 1px;
+    margin-bottom: 2%;
+  }
+
+  #recentWorks hr {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #212121;
+    height: 0;
+    align-self: center;
+    position: relative;
+    right: 40px;
+    top: 20px;
+    width: calc(100% - 370px);
+  }
+
+  #seeProjects {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  #cardWork .recent-work-project-btn {
+    visibility: hidden;
+  }
+
+  #cardWork:hover .recent-work-project-btn {
+    visibility: visible;
+  }
+
+  #cardWork:hover > * :not(.recent-work-project-btn) {
+    opacity: 0;
+  }
+
+  #cardWork:hover {
+    background: url('./images/maskPlaceholder-one.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .introInfo h3 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    width: 448px;
+    height: 48px;
+  }
+
+  #works {
+    margin-left: 20px;
+  }
+
+  .introInfo p {
+    width: 448px;
+    height: 140px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .about-container {
+    width: 566px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-left: 5%;
+    border-bottom: none;
+  }
+
+  .about-img {
+    background-image: url('./images/illustration-about-me.svg');
+    background-repeat: no-repeat;
+    height: 352px;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+  }
+
+  .about-line {
+    display: flex;
+    border: 1px solid #fff;
+    margin: 0 10% 0 10%;
+  }
+
+  .about-header {
+    margin-bottom: 15px;
+  }
+
+  .about-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-categories {
+    display: flex;
+    justify-content: center;
+  }
+
+  .categories {
+    margin-right: 10%;
+  }
+
+  #contact-me {
+    display: flex;
+    margin: 10% 5%;
+  }
+
+  .contact-info {
+    width: 500px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  form {
+    width: 65%;
+    height: 330px;
+  }
+
+  form ul li:last-child {
+    display: flex;
+  }
+
+  textarea {
+    min-height: 60px !important;
+  }
+
+  #contact-me button {
+    width: 30%;
+    margin-bottom: 0 !important;
+  }
+
+  footer {
+    margin-top: 10%;
+  }
 }
