@@ -11,6 +11,7 @@
 - Client
   - HTML5
   - CSS
+  - JS
 
 ## Getting Started
 
