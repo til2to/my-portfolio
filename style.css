@@ -15,8 +15,9 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background: #3c3a39;
+  align-items: center;
 }
 
 header a h2 {
@@ -28,22 +29,72 @@ header a h2 {
 
 a {
   text-decoration: none;
-  margin-left: 2%;
-  margin-top: 8px;
+  margin-left: 3%;
 }
 
-.menuImg {
-  display: flex;
-  margin-left: 60%;
-  align-items: center;
+nav button:first-child {
+  background: #3c3a39;
+  border: none;
+  color: #fff5e1;
+}
+
+nav img {
+  width: 40px;
+}
+
+nav {
+  background: #3c3a39;
 }
 
 .menu_items {
   display: none;
 }
 
-.menu {
-  width: 35px;
+@media screen and (max-width: 768px) {
+  .menu_items {
+    position: relative;
+    left: 0;
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+    background-color: #3C3A39;
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    list-style-type: none;
+    display: none;
+    padding-left: 0;
+  }
+
+  .menu_items li:first-child {
+    position: relative;
+    margin: 50px 10px;
+    color: #fff5e1;
+    width: 10px;
+  }
+
+  .menu_items button {
+    font-size: 20px;
+    margin-left: 380px;
+  }
+
+  .menu_items li:not(:first-child) {
+    margin-left: 10px;
+    border-bottom: 1px solid #6F6C6B;
+    width: 90vw;
+    padding: 6px 0 10px 2px;
+  }
+
+  .menu_items a {
+    color: #fff5e1;
+    font-size: 28px;
+  }
+
+  .menu_items li:nth-child(3) {
+    margin: 30px 10px;
+  }
+    
+  .menu_items li:last-child {
+    display: none;
+  }
 }
 
 #headline {
@@ -196,6 +247,10 @@ hr {
   width: 100%;
 }
 
+.form-label {
+  display: none;
+}
+
 #contact-me button {
   width: 40%;
   background-color: #ff6b00;
@@ -237,18 +292,8 @@ hr {
   margin-left: 7px;
 }
 
-<<<<<<< HEAD
-.bg {
-  background-image: url('./images/maskGroup.png');
-  position: relative;
-  width: 327px;
-  height: 356px;
-}
-
-=======
->>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 #cardWork {
-  margin: 5% 1.5%;
+  margin: 5% 5%;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/maskPlaceholder-one.png');
   background-size: cover;
   height: 400px;
@@ -433,8 +478,6 @@ textarea {
   padding-top: 10px;
 }
 
-<<<<<<< HEAD
-=======
 #contact-me button:hover {
   background-color: #fff5e1;
   border: 1px solid #f55800;
@@ -446,7 +489,6 @@ textarea {
   background: #e05304;
 }
 
->>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 ul.footer-list {
   display: flex;
   justify-content: center;
@@ -459,12 +501,14 @@ ul.footer-list {
 
 @media screen and (min-width: 768px) {
   .menu_items {
-    display: flex;
+    display: flex !important;
+    width: 250px;
     font-family: 'Inter', sans-serif;
   }
 
   nav ul li {
     list-style-type: none;
+    padding: 5px;
   }
 
   nav ul li:nth-child(1) {
@@ -494,6 +538,14 @@ ul.footer-list {
     display: flex;
     justify-content: space-between;
     padding: 0 7% 0 7%;
+  }
+
+  header a {
+    display: flex !important;
+  }
+
+  header button img {
+    display: none;
   }
 
   #headline {
