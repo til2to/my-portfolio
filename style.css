@@ -54,8 +54,8 @@ nav {
   .menu_items {
     position: relative;
     left: 0;
-    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-    background-color: #3C3A39;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    background-color: #3c3a39;
     width: 100%;
     height: 90vh;
     top: 0;
@@ -78,7 +78,7 @@ nav {
 
   .menu_items li:not(:first-child) {
     margin-left: 10px;
-    border-bottom: 1px solid #6F6C6B;
+    border-bottom: 1px solid #6f6c6b;
     width: 90vw;
     padding: 6px 0 10px 2px;
   }
@@ -91,7 +91,7 @@ nav {
   .menu_items li:nth-child(3) {
     margin: 30px 10px;
   }
-    
+
   .menu_items li:last-child {
     display: none;
   }
@@ -249,21 +249,6 @@ hr {
 
 .form-label {
   display: none;
-}
-
-#contact-me button {
-  width: 40%;
-  background-color: #ff6b00;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  margin-top: 15px;
-  margin-bottom: 124px;
-  font-weight: 700;
-  font-size: 17px;
-  height: 48px;
 }
 
 #contact-me button {
@@ -519,6 +504,10 @@ ul.footer-list {
     display: none;
   }
 
+  header a {
+    display: flex !important;
+  }
+
   nav ul li a {
     margin: 10px;
     font-style: normal;
@@ -538,10 +527,6 @@ ul.footer-list {
     display: flex;
     justify-content: space-between;
     padding: 0 7% 0 7%;
-  }
-
-  header a {
-    display: flex !important;
   }
 
   header button img {
