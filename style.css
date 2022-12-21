@@ -596,6 +596,12 @@ ul.footer-list {
     right: 13%;
   }
 
+  .contact-info h2 {
+    text-align: start !important;
+    padding-bottom: 0;
+    margin-top: 30px !important;
+  }
+
   #modal h2 {
     padding: 0;
     margin: 0;
@@ -739,12 +745,6 @@ ul.footer-list {
     height: auto;
     grid-template-columns: 100%;
     margin: 0 5%;
-  }
-
-  .contact-info h2 {
-    text-align: start !important;
-    padding-bottom: 0;
-    margin-top: 30px !important;
   }
 
   #recentWorks h2 {
