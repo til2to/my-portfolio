@@ -33,6 +33,13 @@ body {
   border: 1px solid #dfe1e6;
 }
 
+header a h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  flex-wrap: nowrap;
+}
+
 #modal h2 {
   font-size: 28px;
   color: #172b4d;
@@ -41,14 +48,50 @@ body {
 
 #modal .stack-tags {
   display: flex;
-  padding-left: 8%
+  padding-left: 8%;
+}
+
+.categories-list li {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  color: #fff;
+}
+
+.social-media ul li {
+  padding: 5px;
+}
+
+#works ul li {
+  border: 1px solid #8993a4;
+  background: #fff;
+  padding: 10px 12px;
+  color: #091e42;
+  margin: 3px;
+  list-style-type: none;
+}
+
+#cardWork ul li {
+  display: flex;
+  background-color: #6b6b6b;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  list-style-type: none;
+}
+
+#contact-form ul li {
+  text-align: center;
+  margin-bottom: 24px;
+  list-style-type: none;
 }
 
 #modal .stack-tags li {
   list-style-type: none;
   border: 1px solid #979493;
   padding: 8px 10px;
-  color: #3C3A39
+  color: #3c3a39;
 }
 
 #modal .stack-tags li:not(:first-child) {
@@ -60,8 +103,26 @@ body {
   justify-content: center;
 }
 
+nav img {
+  width: 40px;
+}
+
 .modal-image img {
   height: 250px;
+}
+
+.brand p {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 #modal p {
@@ -114,13 +175,6 @@ header {
   align-items: center;
 }
 
-header a h2 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  flex-wrap: nowrap;
-}
-
 a {
   text-decoration: none;
   margin-left: 3%;
@@ -130,10 +184,6 @@ nav button:first-child {
   background: #3c3a39;
   border: none;
   color: #fff5e1;
-}
-
-nav img {
-  width: 40px;
 }
 
 nav {
@@ -220,34 +270,9 @@ nav {
   color: #fff5e1;
 }
 
-.brand p {
-  margin: 0;
-  margin-right: 15px;
-  padding: 0 10px;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  line-height: 20px;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-}
-
 .social-media ul {
   display: flex;
   list-style-type: none;
-  padding: 5px;
-}
-
-.categories-list li {
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 3rem;
-  color: #fff;
-}
-
-.social-media ul li {
   padding: 5px;
 }
 
@@ -302,15 +327,6 @@ hr {
 #works ul {
   display: flex;
   padding-left: 0;
-}
-
-#works ul li {
-  border: 1px solid #8993a4;
-  background: #fff;
-  padding: 10px 12px;
-  color: #091e42;
-  margin: 3px;
-  list-style-type: none;
 }
 
 #works button {
@@ -393,16 +409,6 @@ hr {
   display: flex;
   padding-left: 0;
   margin-bottom: 0;
-}
-
-#cardWork ul li {
-  display: flex;
-  background-color: #6b6b6b;
-  padding: 10px 12px;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  list-style-type: none;
 }
 
 #cardWork button:hover {
@@ -531,12 +537,6 @@ hr {
   padding: 0 24px;
 }
 
-#contact-form ul li {
-  text-align: center;
-  margin-bottom: 24px;
-  list-style-type: none;
-}
-
 input,
 textarea {
   height: 40px;
@@ -593,7 +593,7 @@ ul.footer-list {
 
   #modal-close {
     top: 14%;
-    right: 13%
+    right: 13%;
   }
 
   #modal h2 {
@@ -614,6 +614,10 @@ ul.footer-list {
   .modal-buttons-info {
     margin-right: 0;
     margin-left: 2%;
+  }
+
+  header button img {
+    display: none;
   }
 
   .modal-image img {
@@ -662,10 +666,6 @@ ul.footer-list {
     display: flex;
     justify-content: space-between;
     padding: 0 7% 0 7%;
-  }
-
-  header button img {
-    display: none;
   }
 
   #headline {
