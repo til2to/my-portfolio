@@ -174,11 +174,3 @@ projectBtns.forEach((projectBtn) => {
     modalContent(projectObj);
   });
 });
-
-lists.forEach((list) => {
-  list.addEventListener('click', () => {
-    menuList.style.display = 'none';
-    logoName.style.display = 'block';
-    hamburger.style.display = 'block';
-  });
-});
