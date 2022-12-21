@@ -91,7 +91,7 @@ projectArray.forEach((project, index) => {
   let tech = "";
   project.technologies.forEach((item) => {
     tech += `<li class="tech-item">
-    <span>${item}</span>
+      <span>${item}</span>
     </li>`;
   });
 
@@ -173,7 +173,6 @@ const modalContent = (project) => {
 
 projectBtns.forEach((projectBtn) => {
   projectBtn.addEventListener("click", (e) => {
-    console.log("see project");
     const getBtnId = e.target.getAttribute("id");
     const projectObj = projectArray[getBtnId];
     modalContent(projectObj);
