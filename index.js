@@ -1,18 +1,14 @@
-const hamburger = document.querySelector(".menuImg");
-const menuList = document.querySelector(".menu_items");
-const lists = document.querySelectorAll(".menu_items li a");
-const closeHamburger = document.querySelector("#btn_close");
-const logoName = document.querySelector(".logo-name");
-const projectContainer = document.querySelector("#seeProjects");
-const modalMainContainer = document.querySelector("#popup-container");
-const modalContainer = document.querySelector("#modal");
-const blurGround = document.querySelector("#blurBg");
+const hamburger = document.querySelector('.menuImg');
+const menuList = document.querySelector('.menu_items');
+const closeHamburger = document.querySelector('#btn_close');
+const logoName = document.querySelector('.logo-name');
+const lists = document.querySelectorAll('.menu_items li a');
 
-hamburger.addEventListener("click", () => {
-  if (menuList.style.display !== "block") {
-    menuList.style.display = "block";
-    logoName.style.display = "none";
-    hamburger.style.display = "none";
+hamburger.addEventListener('click', () => {
+  if (menuList.style.display !== 'block') {
+    menuList.style.display = 'block';
+    logoName.style.display = 'none';
+    hamburger.style.display = 'none';
   }
 });
 
@@ -176,5 +172,13 @@ projectBtns.forEach((projectBtn) => {
     const getBtnId = e.target.getAttribute("id");
     const projectObj = projectArray[getBtnId];
     modalContent(projectObj);
+  });
+});
+
+lists.forEach((list) => {
+  list.addEventListener('click', () => {
+    menuList.style.display = 'none';
+    logoName.style.display = 'block';
+    hamburger.style.display = 'block';
   });
 });
