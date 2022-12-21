@@ -237,7 +237,6 @@ hr {
   margin-left: 7px;
 }
 
-<<<<<<< HEAD
 .bg {
   background-image: url('./images/maskGroup.png');
   position: relative;
@@ -245,8 +244,6 @@ hr {
   height: 356px;
 }
 
-=======
->>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 #cardWork {
   margin: 5% 1.5%;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('./images/maskPlaceholder-one.png');
@@ -433,20 +430,6 @@ textarea {
   padding-top: 10px;
 }
 
-<<<<<<< HEAD
-=======
-#contact-me button:hover {
-  background-color: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-}
-
-#contact-me button:active {
-  color: #f4f1f0;
-  background: #e05304;
-}
-
->>>>>>> 780a60997b30bca9d3605c6fc9955e054c7fa54a
 ul.footer-list {
   display: flex;
   justify-content: center;
