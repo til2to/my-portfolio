@@ -121,38 +121,45 @@ const modalContent = (project) => {
   blurGround.style.filter = 'blur(3px)';
 
   const modal = `
-  <div>
-    <h2>${project.name}</h2>
+  <div id='modal-container'>
+    <div>
+      <h2>${project.name}</h2>
+    </div>
+
+    <ul class="stack-tags">
+      <li>html</li>
+      <li>Bootstrap</li>
+      <li>Ruby on rails</li>
+    </ul>
+
+    <section id="modal-buttons-image-info">
+      <div class="modal-image">
+        <img src='./images/SnapshootPortfolio.svg' alt="Project Image">
+      </div>
+      <div class="modal-buttons-info">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting 
+          industry. Lorem Ipsum has been the industry's standard dummy text 
+          ever since the 1500s, when an unknown printer took a galley of 
+          type and scrambled it 1960s with the releaLorem Ipsum is simply 
+          dummy text of the printing and typesetting industry. Lorem Ipsum 
+          has been the industry's standard dummy text ever since the 1500s, 
+          when an unknown printer took a galley of type and scrambled it 
+          1960s with the releax map lapora verita.
+        </p>
+        <div id="button-group">
+          <button type="button" class="button-group-items demo-button">
+            <span>See Live</span> 
+            <span><img class="live-icon" src="./images/live.svg" alt="live icon"></span>
+          </button>
+          <button type="button" class="button-group-items source-button">
+            <span>See Source</span> 
+            <span><img class="github-icon" src="./images/one.png" alt="live icon"></span>
+          </button> 
+        </div>
+      </div>
+    </section>
   </div>
-
-  <ul class="stack-tags">
-    <li>html</li>
-    <li>Bootstrap</li>
-    <li>Ruby on rails</li>
-  </ul>
-
-  <div class="modal-image">
-    <img src='./images/SnapshootPortfolio.svg' alt="Project Image">
-  </div>
-  <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting 
-    industry. Lorem Ipsum has been the industry's standard dummy text 
-    ever since the 1500s, when an unknown printer took a galley of type 
-    and scrambled it to make a type specimen book. It has survived not 
-    only five centuries, but also the leap into electronic typesetting, 
-    remaining essent
-  </p>
-
-  <section id="button-group">
-    <button type="button" class="button-group-items demo-button">
-      <span>See Live</span> 
-      <span><img class="live-icon" src="./images/live.svg" alt="live icon"></span>
-    </button>
-    <button type="button" class="button-group-items source-button">
-      <span>See Source</span> 
-      <span><img class="github-icon" src="./images/one.png" alt="live icon"></span>
-    </button> 
-  </section>
   `;
 
   modalContainer.innerHTML = modal;
