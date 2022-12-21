@@ -19,8 +19,8 @@
 
 - Clone the project to your local repo
 
-
 ### Prerequisites
+
 > In order to run this project you need:
 
 - Vs Code
@@ -30,7 +30,6 @@
 - Clone the project to your local repo
 - open in code editor
 - run the command "npm init -y"
-
 
 ### Install
 
@@ -46,10 +45,13 @@
 
 ### Owusu Dennis Prah
 
-👤 **Author2**
+👤 i**Author2**
 
-### Syed Hassan Askri
+### Syed Hassan Askr
 
+i**Author3**
+
+### Towett Sammy
 
 ## Key Features
 
@@ -60,7 +62,6 @@
 🚀 Live Demo
 
 [Live Demo Link](https://til2to.github.io/my-portfolio/)
-
 
 ## 🤝 Contributing
 
@@ -77,12 +78,12 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Nice work to reviewers of this project
 
-
 ❓FAQ
+
 - Was any css framework used?:
   - No, just raw css was used.
--What was used for the multiple background images?
-  -background-image, background-size among other properties of css were used.
+    -What was used for the multiple background images?
+    -background-image, background-size among other properties of css were used.
 
 ## 📝 License
 
