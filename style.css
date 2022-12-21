@@ -13,6 +13,97 @@ body {
   overflow-x: hidden;
 }
 
+#popup-container {
+  display: none;
+}
+
+#modal {
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  height: 96vh;
+  overflow-y: scroll;
+  background-color: #fff;
+  width: 90%;
+  z-index: 1;
+  margin: 25px auto;
+  border: 1px solid #dfe1e6;
+}
+
+#modal h2 {
+  font-size: 28px;
+  color: #172b4d;
+  padding: 9% 10% 9% 8%;
+}
+
+#modal .stack-tags {
+  color: #3C3A39;
+  display: flex;
+  padding-left: 8%
+}
+
+#modal .stack-tags li {
+  list-style-type: none;
+  border: 1px solid #979493;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+#modal .stack-tags li:not(:first-child) {
+  margin-left: 3px;
+}
+
+#modal .modal-image {
+  display: flex;
+  justify-content: center;
+}
+
+#modal p {
+  padding-left: 8%;
+  width: 312px;
+  font-weight: 400;
+  color: #344563;
+  font-size: 16px;
+}
+
+#modal-close {
+  position: absolute;
+  z-index: 2;
+  right: 10%;
+  top: 8%;
+  border: none;
+  background: transparent;
+}
+
+#button-group {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#modal .button-group-items {
+  display: flex;
+  background: #ff6b00;
+  color: #fff;
+  align-items: center;
+  padding: 12px 20px;
+  justify-content: center;
+  margin: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-group-items .github-icon {
+  margin-left: 5px;
+}
+
+.button-group-items .live-icon {
+  margin-left: 5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -173,7 +264,6 @@ nav {
   margin: 2em 0.7em 1em 0.7em;
   padding: 1em;
   font-family: 'Crete Round', sans-serif;
-  width: 315px;
   height: 52px;
 }
 
@@ -186,7 +276,8 @@ hr {
 }
 
 .recent-work-image-and-info img {
-  height: 32%;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 #seeProjects {
@@ -441,6 +532,7 @@ hr {
 #contact-form ul li {
   text-align: center;
   margin-bottom: 24px;
+  list-style-type: none;
 }
 
 input,
@@ -482,6 +574,7 @@ ul.footer-list {
 
 .footer-li {
   margin: 0 11px;
+  list-style-type: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -678,7 +771,7 @@ ul.footer-list {
   }
 
   #works {
-    margin-left: 20px;
+    margin: 0 0 40px 20px;
   }
 
   .introInfo p {
