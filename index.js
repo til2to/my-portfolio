@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.menuImg');
 const menuList = document.querySelector('.menu_items');
+const lists = document.querySelectorAll('.menu_items li a');
 const closeHamburger = document.querySelector('#btn_close');
 const logoName = document.querySelector('.logo-name');
 const projectContainer = document.querySelector('#seeProjects')
@@ -20,6 +21,14 @@ closeHamburger.addEventListener('click', () => {
   menuList.style.display = 'none';
   logoName.style.display = 'block';
   hamburger.style.display = 'block';
+});
+
+lists.forEach((list) => {
+  list.addEventListener('click', () => {
+    menuList.style.display = 'none';
+    logoName.style.display = 'block';
+    hamburger.style.display = 'block';
+  });
 });
 
 const projectArray = [

@@ -151,7 +151,6 @@ nav {
     height: 90vh;
     top: 0;
     list-style-type: none;
-    display: none;
     padding-left: 0;
   }
 
@@ -160,11 +159,11 @@ nav {
     margin: 50px 10px;
     color: #fff5e1;
     width: 10px;
+    left: 85%;
   }
 
   .menu_items button {
     font-size: 20px;
-    margin-left: 380px;
   }
 
   .menu_items li:not(:first-child) {
