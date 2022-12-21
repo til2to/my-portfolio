@@ -388,13 +388,7 @@ hr {
 
 #cardWork {
   margin: 5% 5%;
-  background:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url("./images/maskPlaceholder-one.png");
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),url("./images/maskPlaceholder-one.png");
   background-size: cover;
   height: 400px;
 }
@@ -561,6 +555,12 @@ textarea {
   min-height: 120px;
   background: #fbf8f7;
   padding-top: 10px;
+}
+
+#submitMessage {
+  margin: 15px 12px;
+  text-align: center;
+  color: red;
 }
 
 #contact-me button:hover {
