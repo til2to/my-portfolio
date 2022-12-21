@@ -561,6 +561,10 @@ textarea {
   margin: 15px 12px;
   text-align: center;
   color: red;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 #contact-me button:hover {
