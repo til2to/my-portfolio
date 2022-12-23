@@ -183,7 +183,7 @@ projectBtns.forEach((projectBtn) => {
   });
 });
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener((e) => {
   e.preventDefault();
   const email = contactForm.elements.email.value;
   if (email === email.toLowerCase()) {
