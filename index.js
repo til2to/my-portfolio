@@ -98,6 +98,12 @@ projectArray.forEach((project, index) => {
     </li>`;
   });
 
+  project.technologies.forEach((item) => {
+    tech += `<li class="tech-item">
+    <span>${item}</span>
+    </li>`;
+  });
+
   const projectItem = `
     <div id="cardWork">
       <div class="prjectDescription">
@@ -112,9 +118,10 @@ projectArray.forEach((project, index) => {
         ${tech}
       </ul>
       <button class="recent-work-project-btn" id=${index}>See Project</button>
-    </div>`;
-
-  projectContainer.innerHTML += projectItem;
+    </div>
+    
+    projectContainer.innerHTML += projectItem;
+    `;
 });
 
 const projectBtns = document.querySelectorAll(".recent-work-project-btn");
@@ -192,3 +199,6 @@ contactForm.addEventListener('submit', (e) => {
     errorMsg.innerText = 'Email should be in lowercase';
   }
 });
+
+const nameof = contactForm.elements;
+console.log(nameof)
