@@ -7,9 +7,6 @@ const projectContainer = document.querySelector("#seeProjects");
 const modalMainContainer = document.querySelector("#popup-container");
 const modalContainer = document.querySelector("#modal");
 const blurGround = document.querySelector("#blurBg");
-const contactForm = document.getElementById('contact-form');
-const errorMsg = document.querySelector('#submitMessage');
-
 
 hamburger.addEventListener("click", () => {
   if (menuList.style.display !== "block") {
@@ -98,12 +95,6 @@ projectArray.forEach((project, index) => {
     </li>`;
   });
 
-  project.technologies.forEach((item) => {
-    tech += `<li class="tech-item">
-    <span>${item}</span>
-    </li>`;
-  });
-
   const projectItem = `
     <div id="cardWork">
       <div class="prjectDescription">
@@ -118,10 +109,9 @@ projectArray.forEach((project, index) => {
         ${tech}
       </ul>
       <button class="recent-work-project-btn" id=${index}>See Project</button>
-    </div>
-    
-    projectContainer.innerHTML += projectItem;
-    `;
+    </div>`;
+
+  projectContainer.innerHTML += projectItem;
 });
 
 const projectBtns = document.querySelectorAll(".recent-work-project-btn");
@@ -189,16 +179,3 @@ projectBtns.forEach((projectBtn) => {
     modalContent(projectObj);
   });
 });
-
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = contactForm.elements.email.value;
-  if (email === email.toLowerCase()) {
-    contactForm.submit();
-  } else {
-    errorMsg.innerText = 'Email should be in lowercase';
-  }
-});
-
-const nameof = contactForm.elements;
-console.log(nameof)
